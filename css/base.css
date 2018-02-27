@@ -1,40 +1,52 @@
 
-body { /* 10px */
-    font-size: 62.5%;
+@media (min-width: 1366px) {
+    body { /* 10px */
+        font-size: 62.5%;
+    }
 }
+@media (max-width: 1366px) and (min-width: 768px) {
+    body { /* 8px */
+        font-size: 50%;
+    }
+}
+
+/*------------------------- footer --------------------**/
+footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-size: 1.4em;height: 6.857em;line-height: 6.857em;text-align: center;color: #dadada;}
 
 /*------------------------- header --------------------**/
 .header {width: 100%;height: 6.4em;line-height: 6.4em;background: #fff;display: flex;position: fixed;top: 0;left: 0;}
 .header-title {width: 104em;margin: 0 auto;}
 .header .nav .btn-mobile {display: none;}
 .header .nav ul {list-style: none;}
-.header .nav ul li {float: left;padding: 0px 12px;border-radius: 2px;
-    margin-right: 1.6em;}
+.header .nav ul li {float: left;padding: 0px 12px;border-radius: 2px;margin-right: 1.6em;}
 .header .nav ul li:last-child {margin-right: 0;}
-.header .nav ul li a {
-    font-size: 1.6em;
-    padding: 7px 0px;
-    font-family: OnionMath_Bold-Bold;
-    color: #888;
-}
-.header .nav ul li .active {
-    font-size 1.6em;
-    color: #1696EA;
-    border-bottom: 3px solid #1696EA;
-}
-.header .logo {
-    margin: 0 35em 0 0;
-    float:left;
-}
+.header .nav ul li a {font-size: 1.6em;padding: 7px 0px;font-family: OnionMath_Bold-Bold;color: #888;}
+.header .nav ul li .active {font-size 1.6em;color: #1696EA;border-bottom: 3px solid #1696EA;}
+.header .logo {margin: 0 35em 0 0;float:left;}
 .header .logo h2{font-size: 2.4em;}
 
 /*------------------------- index main --------------------**/
-main {margin-top: 6.4em;clear:both;margin-bottom: 200px;}
+.main {margin-top: 6.4em;clear:both;}
+/*------------------------- home banner --------------------**/
+.home-banner {width: 100%;height: 80em;background: url(../images/home_banner@3x.png) no-repeat center center;background-size: cover;}
+/* .home-banner .comment{position: relative} */
+.home-banner .comment h2 {font-size:4.8em;padding: 2.08em 0 .42em 0;color: #fff}
+.home-banner .comment p {font-family: OnionMath_Bold-Bold;font-size: 2.4em;
+    color: #BBE7F6;line-height: 1.667em;width: 33.3em;}
+.home-banner .comment button {font-size: 2.4em; padding: .833em 1.167em;background: #fff;box-shadow: 0 12px 36px 0 rgba(0,0,0,0.08);border-radius: 4px; border: none;margin: 1.667em 0 .833em 0}
+.home-banner .comment .download {position: relative}
+.home-banner .comment .download .show-download {display: none}
+.home-banner .comment .download img{width: 4em;height: 4em;float: left;margin-right: 1em;}
+.home-banner .comment .download i{font-style: normal;font-size: 1.6em;color: #BBE7F6;line-height: 1.25em;font-family: OnionMath_Regular-regular;}
+.home-banner .comment .code-fixed{position:absolute;z-index:11;width: 10.4em;height: 10.4em;border: .8em solid #fff;border-radius: .8em;top: 5em;left: -4em}
+.home-banner .comment .code-fixed img {width: 100%;height: 100%;}
+.home-banner .comment .triangle {width: 2.83em;height: 2.83em;background: #fff;z-index:9;position: absolute;top: 2.2em;left: -.6em;border-radius: 4px;transform: rotate(45deg)}
+
+/*------------------------- index main --------------------**/
 .comment{width:104em;margin: 0 auto;}
-/* .comment{width:104em;margin: 0 auto;} */
 .comment .h1{font-size: 4.8em;text-align: center;padding: 1.6em 0 1.25em 0;}
 .comment-PC {display: block}
-.comment-mobile {display: none;}
+.comment .comment-mobile {display: none;}
 .comment-article {display: flex;}
 .comment-article aside {flex: 1;}
 .comment-article aside h2 {font-size: 3.6em;padding: 1.8em 0 0.83em 0;}
@@ -43,7 +55,6 @@ main {margin-top: 6.4em;clear:both;margin-bottom: 200px;}
 .comment-article .img img{width:48em;display: block;height:40em;}
 /* button more */
 .btn-more {text-align: center;font-size: 2.4em; padding: .833em 3.66em;margin: 2.5em 15.8em 3.33em;background: #fff;border: 1px solid #f8f8f8;border-radius: 4px;box-shadow:0 20px 50px 0 rgba(0,0,0,0.05);}
-
 
 /* welfare */
 .welfare {background: #f9f9f9;width: 100%;}
@@ -68,8 +79,7 @@ main {margin-top: 6.4em;clear:both;margin-bottom: 200px;}
 .evaluation .comment .comment-article{display: block}
 .evaluation .comment-article .title{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.8em;color: #3B3B3B;line-height: 1.42em;}
 .evaluation .comment-article .info{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.4em;color: #6A6A6A;line-height: 1.33em;margin: .42em 0 .83em 0}
-.evaluation .comment-article .desc{display:block;font-family: OnionMath_Regular-regular;
-    font-size: 2em;color: #888888;letter-spacing: 0;line-height: 1.6em;}
+.evaluation .comment-article .desc{display:block;font-family: OnionMath_Regular-regular;font-size: 2em;color: #888888;letter-spacing: 0;line-height: 1.6em;}
 
 /* jobs */
 .jobs {width: 100%;background: #fff;}
@@ -80,6 +90,20 @@ main {margin-top: 6.4em;clear:both;margin-bottom: 200px;}
 
 
 
+/* values page */
+.value-page {margin-top: 6.4em;}
+.value-page .value-comment{width: 118em;margin: 0 auto;}
+.value-page .value-comment .value-title {padding: 0 7em;}
+.value-page .value-comment .value-title h3 {font-size: 4.8em;text-align: center;font-family: OnionMath_Bold-Bold;line-height: 1em; padding: 1.67em 0 .83em 0}
+.value-page .value-comment .value-title p {font-family: OnionMath_Regular-regular;font-size: 2em;line-height: 1.6em;}
 
 
-
+.value-details {width: 100%;background: #f9f9f9;padding-bottom: 8em;}
+.value-details .v-d-title {padding: 0 7em;}
+.value-details .v-d-title h2 {font-size: 4.8em;text-align: center;font-family: OnionMath_Bold-Bold;line-height:1em;padding: 1.67em 0 .83em 0;}
+.value-details .v-d-title .v-d-t-flex{display: flex}
+.value-details .v-d-title .v-d-t-flex aside {flex: 1;}
+.value-details .v-d-title .v-d-t-flex aside p {font-family: OnionMath_Regular-regular; font-size: 2em; line-height: 1.6em;}
+.value-details .v-d-title .v-d-t-img {padding-left: 4em;}
+.value-details .v-d-title .v-d-t-img img{padding-top:3em;width:48em;height:40em;display: block}
+.value-details .v-d-title .v-d-t-img .v-d-t-i-top {padding-top:0;}

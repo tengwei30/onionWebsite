@@ -5,33 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>洋葱数学</title>
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" media="screen and (min-device-width:768px)"  href="css/base.css">
+    <link rel="stylesheet" media="screen and (max-device-width:768px)"  href="css/base-mobile.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h4><span class="blue-5">洋葱</span>数学</h4>
+    <header class="header" style="box-shadow: 0 4px 6px 0 rgba(0,0,0,0.04)">
+        <div class="header-title">
+            <div class="logo">
+                <h2><span class="blue-5">洋葱</span>数学</h2>
+            </div>
+            <nav class="nav">
+                <p class="btn-mobile">图片</p>
+                <ul class="navLists">
+                    <li><a class="tab" href="index.html">首页</a></li>
+                    <li><a class="tab active" href="onion-values.html">洋葱价值观</a></li>
+                    <li><a class="tab" href="onion-welfare.html">洋葱福利</a></li>
+                    <li><a class="tab" href="onion-dev.html">发展历程</a></li>
+                    <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
+                    <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul class="navLists">
-                <li><a class="tab" href="index.html">首页</a></li>
-                <li><a class="tab active" href="onion-values.html">洋葱价值观</a></li>
-                <li><a class="tab" href="onion-welfare.html">洋葱福利</a></li>
-                <li><a class="tab" href="onion-dev.html">发展历程</a></li>
-                <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
-                <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
-            </ul>
-        </nav>
     </header>
-    <main class="main">
-        <!-- banner -->
-        <div style="width:100%;height:800px;background: blue;">
-            我是banner图
+    <main class="value-page">
+        <div class="value-comment">
+            <div class="value-title">
+                <h3>以价值与技术真正创造<span class="blue-5">全新中国教育</span></h3>
+                <p class="gray-5">在当今这个时代，我们由衷认为：决定职业选择和职业成功的基础要素不是物质回报亦或专业能力，而是价值观——与一家价值观相合的组织或公司同心勠力，方能最大程度地在工作中收获满足感与成就感。</p><br />
+                <p class="gray-5">然而，“不识庐山真面目，只缘身在此山中。”想要描述清楚洋葱数学自己的价值观，对我们并非一件易事。下面是我们尽己所能，对我们的价值观与团队文化进行的最真实表达。我们衷心希望这对你决定是否和我们共度一段旅程有所帮助。</p>
+            </div>
+            <div class="value-bg" style="width: 100%;height: 300px;background: blue;"></div>
         </div>
-        <!-- comment -->
+        <!-- 以下class名取父class驼峰首字母 -->
+        <div class="value-details">
+            <div class="value-comment">
+                <div class="v-d-title">
+                    <h2 class="gray-7">教育值得<span class="blue-5">终身投入</span></h2>
+                    <div class="v-d-t-flex">
+                        <aside>
+                            <p class="gray-5">每个人都梦想过，但大多没有机会投身其中的事：让教育有所不同。</p><br />
+                            <P class="gray-5">洋葱数学聚集了这样一群“堂吉诃德”：我们很天真地认为，如果社会只能改进一个问题，那就是教育。教育让每个人成长为今天的自己，如果教育得到改变，一代人成长起来，世界可以大有不同。</P><br />
+                            <p class="gray-5">我们深深明白教育理想与现实有很大落差，所以我们更相信改变教育永远值得去做。</p><br />
+                            <p class="gray-5">每一位将一腔热情寄付在席间畅谈的朋友，我们赞赏你的见地，懂得你的选择；每一位在三尺讲台上奉献智慧和汗水的行者，我们深知耕耘辛苦，敬佩你的炽热；每一位尝试以新理念、新技术改变教育的骑士，你并非“曲高和寡”，有我们志同道合。</p><br />
+                            <p class="gray-5">我们邀请每一位同伴，一起在洋葱数学做教育的“梦想家”与“冒险家”。</p>
+                        </aside>
+                        <aside class="v-d-t-img">
+                            <img src="images/illus.png" alt="">
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="value-details" style="background: #fff;">
+            <div class="value-comment">
+                <div class="v-d-title">
+                    <h2 class="gray-7">学习 <span class="blue-5">&ne;</span> 反转人生</h2>
+                    <div class="v-d-t-flex">
+                        <aside class="v-d-t-img" style="padding-left: 0;">
+                            <img class="v-d-t-i-top" src="images/illus.png" alt="">
+                        </aside>
+                        <aside>
+                            <p class="gray-5">我们相信终身学习，相信学习永远能带来幸福感。如果学生觉得学习痛苦，只是因为不当的学习方式、糟糕的学习体验。</p><br />
+                            <P class="gray-5">而洋葱数学对每位学生都有百分之百的信心，所以我们基于学生的认知特点，精心设计课程与练习，努力让每位学生都愿意在自主学习中高效且快乐地获取知识，并让自主学习伴随每个人的一生。</P><br />
+                            <p class="gray-5">学习，从来不是一种负担。</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="value-details">
+            <div class="value-comment">
+                <div class="v-d-title">
+                    <h2 class="gray-7">学习，<span class="blue-5">无可阻挡</span></h2>
+                    <div class="v-d-t-flex">
+                        <aside>
+                            <p class="gray-5">所谓的“教育资源”从来不平衡。从“学区房”、到“择校费”、到“辅导班”，学生想要获取优质的教育似乎总有很多约束。</p><br />
+                            <P class="gray-5">我们希望洋葱数学能够打破种种限制，为学生提供一个平等接受教育的机会。</P><br />
+                            <p class="gray-5">我们的用户，既来自一线城市的全国名校，更来自江南塞北、城镇乡野的每个角落。所有学生随时随地拿出移动设备，洋葱数学助力学习，随叫随到。</p><br />
+                            <p class="gray-5">我们相信，教育质量与物质财富不应挂钩。</p>
+                        </aside>
+                        <aside class="v-d-t-img">
+                            <img class="v-d-t-i-top" src="images/illus.png" alt="">
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
-    <h2>我是洋葱价值观</h2>
+    <footer></footer>
 </body>
 </html>
