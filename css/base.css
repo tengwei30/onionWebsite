@@ -1,0 +1,85 @@
+
+body { /* 10px */
+    font-size: 62.5%;
+}
+
+/*------------------------- header --------------------**/
+.header {width: 100%;height: 6.4em;line-height: 6.4em;background: #fff;display: flex;position: fixed;top: 0;left: 0;}
+.header-title {width: 104em;margin: 0 auto;}
+.header .nav .btn-mobile {display: none;}
+.header .nav ul {list-style: none;}
+.header .nav ul li {float: left;padding: 0px 12px;border-radius: 2px;
+    margin-right: 1.6em;}
+.header .nav ul li:last-child {margin-right: 0;}
+.header .nav ul li a {
+    font-size: 1.6em;
+    padding: 7px 0px;
+    font-family: OnionMath_Bold-Bold;
+    color: #888;
+}
+.header .nav ul li .active {
+    font-size 1.6em;
+    color: #1696EA;
+    border-bottom: 3px solid #1696EA;
+}
+.header .logo {
+    margin: 0 35em 0 0;
+    float:left;
+}
+.header .logo h2{font-size: 2.4em;}
+
+/*------------------------- index main --------------------**/
+main {margin-top: 6.4em;clear:both;margin-bottom: 200px;}
+.comment{width:104em;margin: 0 auto;}
+/* .comment{width:104em;margin: 0 auto;} */
+.comment .h1{font-size: 4.8em;text-align: center;padding: 1.6em 0 1.25em 0;}
+.comment-PC {display: block}
+.comment-mobile {display: none;}
+.comment-article {display: flex;}
+.comment-article aside {flex: 1;}
+.comment-article aside h2 {font-size: 3.6em;padding: 1.8em 0 0.83em 0;}
+.comment-article aside p {font-size: 2em; font-family: OnionMath_Regular-regular;}
+.comment-article .img {padding-left: 4em;}
+.comment-article .img img{width:48em;display: block;height:40em;}
+/* button more */
+.btn-more {text-align: center;font-size: 2.4em; padding: .833em 3.66em;margin: 2.5em 15.8em 3.33em;background: #fff;border: 1px solid #f8f8f8;border-radius: 4px;box-shadow:0 20px 50px 0 rgba(0,0,0,0.05);}
+
+
+/* welfare */
+.welfare {background: #f9f9f9;width: 100%;}
+.welfare .comment-article{margin-right: 3.8em; margin-bottom: 4em; display: inline-block;}
+.welfare .comment-article figure{width: 22.9em; height: 29.6em;margin: 0;}
+.welfare .comment-article figure h3{font-size: 2.8em;height: 1em;line-height: 1em;text-align: center;margin:1.07em 0 .5em 0;}
+.welfare .comment-article figure img{width: 16em;height: 16em;margin: 0 3.5em;}
+.welfare .comment-article figure p {font-family: OnionMath_Regular-regular;font-size: 2em;line-height: 1.6em;text-align: center;}
+
+.welfare .margin-no{margin-right: 0;}
+
+/* develop */
+.develop{width: 100%;background: #1696ea;}
+.develop .comment-article {display: block}
+.develop .comment .h1 {color: #fff;font-family: OnionMath_Bold-Bold;}
+.develop .comment h3 {font-size: 2.8em;color: #fff;line-height: 2.8em;font-family: OnionMath_Bold-Bold;}
+.develop .comment p {font-family: OnionMath_Regular-regular;font-size: 2em;letter-spacing: 0;line-height: 1.6em;}
+
+
+/* evaluation */
+.evaluation {width: 100%; background: #f9f9f9;}
+.evaluation .comment .comment-article{display: block}
+.evaluation .comment-article .title{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.8em;color: #3B3B3B;line-height: 1.42em;}
+.evaluation .comment-article .info{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.4em;color: #6A6A6A;line-height: 1.33em;margin: .42em 0 .83em 0}
+.evaluation .comment-article .desc{display:block;font-family: OnionMath_Regular-regular;
+    font-size: 2em;color: #888888;letter-spacing: 0;line-height: 1.6em;}
+
+/* jobs */
+.jobs {width: 100%;background: #fff;}
+.jobs .comment figure {margin:0;width: 19.75em;display: inline-block; padding: 2em;margin-right: 2.7em;margin-bottom:2em;}
+.jobs .comment figure img {width: 20em;height: 16em}
+.jobs .comment figure h3 {font-size: 2.8em; margin: 1.07em auto .5em;text-align: center;color: #3B3B3B;font-family: OnionMath_Bold-Bold;line-height: 1em;}
+.jobs .comment figure p {font-size: 2em;font-family: OnionMath_Regular-regular;color: #A2A2A2;line-height: 1.6em;text-align: center;padding: 0 .25em;}
+
+
+
+
+
+
