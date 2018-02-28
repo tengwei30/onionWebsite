@@ -6,7 +6,7 @@
 }
 @media (max-width: 1366px) and (min-width: 768px) {
     body { /* 8px */
-        font-size: 50%;
+        font-size: 47.5%;
     }
 }
 
@@ -14,7 +14,7 @@
 footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-size: 1.4em;height: 6.857em;line-height: 6.857em;text-align: center;color: #dadada;}
 
 /*------------------------- header --------------------**/
-.header {width: 100%;height: 6.4em;line-height: 6.4em;background: #fff;display: flex;position: fixed;top: 0;left: 0;}
+.header {width: 100%;height: 6.4em;line-height: 6.4em;background: #fff;display: flex;position: fixed;top: 0;left: 0;z-index: 9999;}
 .header-title {width: 104em;margin: 0 auto;}
 .header .nav .btn-mobile {display: none;}
 .header .nav ul {list-style: none;}
@@ -29,7 +29,6 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .main {margin-top: 6.4em;clear:both;}
 /*------------------------- home banner --------------------**/
 .home-banner {width: 100%;height: 80em;background: url(../images/home_banner@3x.png) no-repeat center center;background-size: cover;}
-/* .home-banner .comment{position: relative} */
 .home-banner .comment h2 {font-size:4.8em;padding: 2.08em 0 .42em 0;color: #fff}
 .home-banner .comment p {font-family: OnionMath_Bold-Bold;font-size: 2.4em;
     color: #BBE7F6;line-height: 1.667em;width: 33.3em;}
@@ -54,7 +53,13 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .comment-article .img {padding-left: 4em;}
 .comment-article .img img{width:48em;display: block;height:40em;}
 /* button more */
-.btn-more {text-align: center;font-size: 2.4em; padding: .833em 3.66em;margin: 2.5em 15.8em 3.33em;background: #fff;border: 1px solid #f8f8f8;border-radius: 4px;box-shadow:0 20px 50px 0 rgba(0,0,0,0.05);}
+.btn-more {text-align: center;font-size: 2.4em; padding: .833em 3.66em;background: #fff;border: 1px solid #f8f8f8;border-radius: 4px;box-shadow:0 20px 50px 0 rgba(0,0,0,0.05);}
+@media (min-width: 1366px) {
+    .btn-more {margin: 2.5em 15.8em 3.33em;}
+}
+@media (max-width: 1366px) and (min-width: 768px) {
+    .btn-more {margin:2.5em 18.5em 3.33em;}
+}
 
 /* welfare */
 .welfare {background: #f9f9f9;width: 100%;}
@@ -67,18 +72,35 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .welfare .margin-no{margin-right: 0;}
 
 /* develop */
-.develop{width: 100%;background: #1696ea;}
-.develop .comment-article {display: block}
+.develop{width: 100%;background: #1696ea url(../images/development_course_history_illus@3x.png) no-repeat center bottom;background-size: 100%;}
+.develop .comment .onion-value {position: relative}
+.develop .comment-article {display: block;padding-left: 3em;}
 .develop .comment .h1 {color: #fff;font-family: OnionMath_Bold-Bold;}
 .develop .comment h3 {font-size: 2.8em;color: #fff;line-height: 2.8em;font-family: OnionMath_Bold-Bold;}
 .develop .comment p {font-family: OnionMath_Regular-regular;font-size: 2em;letter-spacing: 0;line-height: 1.6em;}
-
+@media (max-width: 1366px) and (min-width: 768px) {
+    .develop .comment .radius-icon {width: .4em;height: 45.5em;background: #2DA9EE;position: absolute;top: 20.8em;left: 0;}
+    .develop .comment .radius-icon li {width: 2em;height: 2em;border-radius: 2em;background: #2DA9EE;list-style: none;position: absolute;top:0;left: -.8em;}
+    .develop .comment .radius-icon li:nth-of-type(2) {top: 12em;}
+    .develop .comment .radius-icon li:nth-of-type(3) {top: 24.5em;}
+    .develop .comment .radius-icon li:nth-of-type(4) {top: 34.4em;}
+    .develop .comment .radius-icon li:nth-of-type(5) {top: 44.3em;}
+}
+@media (min-width: 1366px) {
+    .develop .comment .radius-icon {width: .4em;height: 50.5em;background: #2DA9EE;position: absolute;top: 23.8em;left: 0;}
+    .develop .comment .radius-icon li {width: 2em;height: 2em;border-radius: 2em;background: #2DA9EE;list-style: none;position: absolute;top:0;left: -.8em;}
+    .develop .comment .radius-icon li:nth-of-type(2) {top: 13.5em;}
+    .develop .comment .radius-icon li:nth-of-type(3) {top: 27.5em;}
+    .develop .comment .radius-icon li:nth-of-type(4) {top: 38.5em;}
+    .develop .comment .radius-icon li:nth-of-type(5) {top: 49.5em;}
+}
 
 /* evaluation */
 .evaluation {width: 100%; background: #f9f9f9;}
 .evaluation .comment .comment-article{display: block}
 .evaluation .comment-article .title{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.8em;color: #3B3B3B;line-height: 1.42em;}
 .evaluation .comment-article .info{display:block;font-family: OnionMath_Bold-Bold;font-size: 2.4em;color: #6A6A6A;line-height: 1.33em;margin: .42em 0 .83em 0}
+.evaluation .comment-article .info .read-more{float: right;}
 .evaluation .comment-article .desc{display:block;font-family: OnionMath_Regular-regular;font-size: 2em;color: #888888;letter-spacing: 0;line-height: 1.6em;}
 
 /* jobs */
@@ -87,11 +109,12 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .jobs .comment figure img {width: 20em;height: 16em}
 .jobs .comment figure h3 {font-size: 2.8em; margin: 1.07em auto .5em;text-align: center;color: #3B3B3B;font-family: OnionMath_Bold-Bold;line-height: 1em;}
 .jobs .comment figure p {font-size: 2em;font-family: OnionMath_Regular-regular;color: #A2A2A2;line-height: 1.6em;text-align: center;padding: 0 .25em;}
-
+.jobs .comment figure p .invisible{visibility: hidden}
 
 
 /* values page */
 .value-page {margin-top: 6.4em;}
+.value-page .value-bg {width: 100%;height: 42em;background: url('../images/values_illus_head@3x.png') no-repeat center bottom;background-size: 100%;}
 .value-page .value-comment{width: 118em;margin: 0 auto;}
 .value-page .value-comment .value-title {padding: 0 7em;}
 .value-page .value-comment .value-title h3 {font-size: 4.8em;text-align: center;font-family: OnionMath_Bold-Bold;line-height: 1em; padding: 1.67em 0 .83em 0}
@@ -107,3 +130,106 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .value-details .v-d-title .v-d-t-img {padding-left: 4em;}
 .value-details .v-d-title .v-d-t-img img{padding-top:3em;width:48em;height:40em;display: block}
 .value-details .v-d-title .v-d-t-img .v-d-t-i-top {padding-top:0;}
+
+/* welfare page */
+.welfare-page .welfare-environment {width: 100%;background: #1696ea}
+.welfare-page .welfare-environment .welfare-env-desc {width: 104em;margin: 0 auto;}
+.welfare-page .welfare-environment .welfare-env-desc h3 {color: #fff;font-size: 4.8em;text-align: center;font-family: OnionMath_Bold-Bold;line-height: 1em;padding-top: 1.667em;}
+.welfare-page .welfare-environment .welfare-env-desc p {font-family: OnionMath_Regular-regular;font-size: 2em;line-height: 1.6em;letter-spacing: 0;padding: 2em 0;}
+
+/* shuffling */
+.welfare-page .welfare-environment .welfare-env-shuffling {width: 104em;margin: 0 auto;position: relative;clear: both;overflow: scroll;height: 56em;}
+.welfare-page .welfare-environment .welfare-env-shuffling .list {list-style: none;position: absolute;top: 0;left: 0;width:99999px;height: 56em;background: red;z-index: 22;}
+.welfare-page .welfare-environment .welfare-env-shuffling .list li {float: left;width: 104em;}
+
+/* develop page */
+.dev-page .d-p-top {width: 104em;margin: 0 auto;}
+.dev-page .d-p-top h2 {font-family: OnionMath_Bold-Bold;font-size: 4.8em;line-height: 1em;padding: 1.667em 0  0.833em 0;text-align: center;}
+.dev-page .d-p-top .tip {font-family: OnionMath_Regular-regular;font-size: 2em;color: #888888;letter-spacing: 0;line-height: 1.6em;margin-bottom: 3em;}
+.dev-page .d-p-top .dev-boss-desc {width: 100%;overflow:hidden;padding-bottom: 4em;border-bottom: 1px solid #e8e8e8;}
+.dev-page .d-p-top .dev-boss-desc:nth-of-type(2){padding-top: 4em;}
+.dev-page .d-p-top .dev-boss-desc aside {float:left;}
+.dev-page .d-p-top .dev-boss-desc .aside-img {width: 32em;margin-right: 4em;}
+.dev-page .d-p-top .dev-boss-desc .aside-txt {width: 64em;margin-right: 4em;}
+.dev-page .d-p-top .dev-boss-desc aside img {width: 100%;}
+.dev-page .d-p-top .dev-boss-desc aside .boss-title {font-family: OnionMath_Bold-Bold;
+font-size: 3.2em;color: #3B3B3B;line-height: 1em;margin: 1.22em 0 .5em 0;}
+.dev-page .d-p-top .dev-boss-desc aside .boss-info{font-family: OnionMath_Bold-Bold;
+font-size: 2.4em;color: #6A6A6A;line-height: 1em;margin-bottom: 1.25em;}
+.dev-page .d-p-top .dev-boss-desc aside .boss-desc{font-family: OnionMath_Regular-regular;
+font-size: 2em;color: #888888;line-height: 1.6em;}
+.dev-page .d-p-bottom {width: 100%;background:#1696ea url(../images/development_course_history_illus@3x.png) no-repeat center bottom; background-size: 100%;}
+.dev-page .d-p-bottom .h1 {font-size: 4.8em;text-align: center;padding: 1.667em 0;font-family: OnionMath_Bold-Bold;line-height: 1em;color: #fff;}
+.dev-page .d-p-bottom .d-p-b-miles {width: 104em;margin: 0 auto;position: relative;}
+.dev-page .d-p-bottom .d-p-b-miles h2,.dev-page .d-p-bottom .d-p-b-story h2 {font-family: OnionMath_Bold-Bold;font-size: 3.2em;line-height: 1em;color: #fff;margin-bottom: 1.25em;}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment h3{font-size: 2.8em;line-height: 1em;color: #fff;}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment p {font-family: OnionMath_Regular-regular;font-size: 2em;letter-spacing: 0;line-height: 1.6em;padding: .5em 0 1.5em 0}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment{padding-left: 3em;}
+
+@media (min-width: 1366px) {
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon {width: .4em;height: 46.5em;position: absolute;background: #2DA9EE;border-radius: .2em;top: 8.5em;left: 0;list-style: none;z-index: 9;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li {width: 2em;height: 2em;border-radius: 2em;background: #2DA9EE;list-style: none;position: absolute;top:-.8em;left: -.8em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(2) {top: 12.5em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(3) {top: 25.3em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(4) {top: 35.5em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(5) {top: 45.5em;}
+}
+@media (max-width: 1366px) and (min-width: 768px) {
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon {width: .4em;height: 39em;position: absolute;background: #2DA9EE;border-radius: .2em;top: 7em;left: 0;list-style: none;z-index: 9;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li {width: 2em;height: 2em;border-radius: 2em;background: #2DA9EE;list-style: none;position: absolute;top:-.8em;left: -.8em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(2) {top: 10.2em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(3) {top: 21.3em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(4) {top: 29.8em;}
+    .dev-page .d-p-bottom .d-p-b-miles .d-miles-radius-icon li:nth-of-type(5) {top: 38em;}
+}
+
+.dev-page .d-p-bottom .d-p-b-story {width: 109.2em;margin: 0 auto;padding-bottom: 23.6em;}
+.dev-page .d-p-bottom .d-p-b-story h2 {padding-left: .8em;padding-top: 1.5em;}
+.dev-page .d-p-bottom .d-p-b-story p {font-family: OnionMath_Regular-regular;
+font-size: 2em;color: #BBE7F6;letter-spacing: 0;line-height: 1.6em;padding-right: 2.6em}
+.footer p{margin: 0;padding:0;width: 100%;background:#148EE2;margin: 0 auto;font-size: 1.4em;height: 6.857em;line-height: 6.857em;text-align: center;color: #117ED1;}
+
+
+
+
+
+/* evaluation */
+.eval-page .eval-ins {width: 104em;margin: 0 auto;overflow: hidden;padding-bottom: 8em;}
+.eval-page .eval-ins h2,.eval-page .eval-professor h2 {font-family: OnionMath_Bold-Bold;font-size: 4.8em;line-height: 1em;padding: 1.667em 0  0.833em 0;text-align: center;}
+.eval-page .eval-ins figure{margin: 0;width: 22em;margin-right: 18.5em;float: left;}
+.eval-page .eval-ins figure.margin-no{margin-right: 0!important}
+.eval-page .eval-ins figure img {width: 100%;height: 16em;border-bottom: 1px solid #888;margin-top:1em;}
+.eval-page .eval-ins figure p {font-family: OnionMath_Bold-Bold;font-size: 2em;color: #6A6A6A;line-height: 1em;text-align: center;padding: 1em 0;
+}
+.eval-page .eval-ins .eval-start-say {overflow: hidden;clear: both;padding-top: 6em;}
+.eval-page .eval-ins .eval-start-say aside{float: left;}
+.eval-page .eval-ins .eval-start-say .eval-start-img {width: 56em;height: 26em;}
+.eval-page .eval-ins .eval-start-say .eval-start-img img{width: 100%}
+.eval-page .eval-ins .eval-start-say .eval-start-txt {width: 38em;padding-left: 3em;padding-right: 4em}
+.eval-page .eval-ins .eval-start-say .eval-start-txt h3{font-size: font-family: OnionMath_Bold-Bold;font-size: 3.2em;color: #3B3B3B;line-height: 1em;padding:2.625em 0 .625em 0 }
+.eval-page .eval-ins .eval-start-say .eval-start-txt p {font-family: OnionMath_Regular-regular;font-size: 2em;color: #A2A2A2;line-height: 1.6em;}
+.eval-page .eval-ins .eval-star-video {width: 98em; border: 1px solid #f8f8f8;padding: 3em; margin: 0 auto;box-shadow: 0 12px 36px 0 rgba(0,0,0,0.08);border-radius: 1.6em;}
+.eval-page .eval-ins .eval-star-video .eval-video-control {width: 98em;margin: 0 auto}
+
+.eval-page .eval-professor{width: 100%;background: #f9f9f9;}
+.eval-page .eval-professor .eval-professor-comment{width: 104em;margin: 0 auto;}
+.eval-page .eval-professor .eval-professor-comment .h1 {padding-bottom: 1em}
+.eval-page .eval-professor .eval-professor-info {padding-top: 4em;}
+.eval-page .eval-professor .eval-professor-info aside {clear: both}
+.eval-page .eval-professor .eval-professor-info img {width: 12em;height: 12em;float: left;margin:0 3em 3em 0;}
+.eval-page .eval-professor .eval-professor-info .eval-professor-intro {float: left;}
+.eval-page .eval-professor .eval-professor-info .eval-professor-intro .eval-professor-name {font-family: OnionMath_Bold-Bold;font-size: 3.2em; color: #3B3B3B;line-height: 1em;padding-bottom:.625em}
+.eval-page .eval-professor .eval-professor-info .eval-professor-intro .eval-professor-position {font-family: OnionMath_Bold-Bold;font-size: 2.4em;
+color: #6A6A6A;line-height: 1em;margin-bottom:.416em}
+.eval-page .eval-professor .eval-professor-info .eval-professor-eval {font-family: OnionMath_Regular-regular;
+font-size: 2em;color: #888888;ine-height: 1.6em; padding-bottom:2em; border-bottom: 1px solid #e8e8e8;}
+.eval-page  .eval-media .evaluation {width: 100%;background: #fff;}
+
+.eval-page  .eval-media .eval-media-logo{width: 104em;margin: 2em auto 8em; clear: both;overflow: hidden;}
+.eval-page  .eval-media .eval-media-logo img {width: 20em;height: 10em;float: left;margin:0 8em 6em 0}
+.eval-page  .eval-media .eval-media-logo img.margin-no {margin-right: 0}
+
+
+
+
+

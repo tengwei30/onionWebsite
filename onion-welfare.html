@@ -5,33 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>洋葱数学</title>
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" media="screen and (min-device-width:768px)"  href="css/base.css">
+    <link rel="stylesheet" media="screen and (max-device-width:768px)"  href="css/base-mobile.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h4><span class="blue-5">洋葱</span>数学</h4>
+    <header class="header" style="box-shadow: 0 4px 6px 0 rgba(0,0,0,0.04)">
+        <div class="header-title">
+            <div class="logo">
+                <h2><span class="blue-5">洋葱</span>数学</h2>
+            </div>
+            <nav class="nav">
+                <p class="btn-mobile">图片</p>
+                <ul class="navLists">
+                    <li><a class="tab" href="index.html">首页</a></li>
+                    <li><a class="tab" href="onion-values.html">洋葱价值观</a></li>
+                    <li><a class="tab active" href="onion-welfare.html">洋葱福利</a></li>
+                    <li><a class="tab" href="onion-dev.html">发展历程</a></li>
+                    <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
+                    <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul class="navLists">
-                <li><a class="tab" href="index.html">首页</a></li>
-                <li><a class="tab" href="onion-values.html">洋葱价值观</a></li>
-                <li><a class="tab active" href="onion-welfare.html">洋葱福利</a></li>
-                <li><a class="tab" href="onion-dev.html">发展历程</a></li>
-                <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
-                <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
-            </ul>
-        </nav>
     </header>
     <main class="main">
-        <!-- banner -->
-        <div style="width:100%;height:800px;background: blue;">
-            我是banner图
-        </div>
-        <!-- comment -->
+       <div class="welfare-page">
+            <div class="welfare">
+                <div class="comment">
+                    <!-- onion welfare -->
+                    <div class="onion-value">
+                        <h1 class="h1">洋葱<span class="blue-5">福利</span></h1>
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis1_illus@3x.png" alt="">
+                                <h3 class="gray-7">15天带薪年假</h3>
+                                <p class="gray-4">入职即享有，还可以跨年累计</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis2_illus@3x.png" alt="">
+                                <h3 class="gray-7">带薪病假</h3>
+                                <p class="gray-4">每月一天带薪病假，身体不适的时候无需硬扛</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis3_illus@3x.png" alt="">
+                                <h3 class="gray-7">弹性工作制</h3>
+                                <p class="gray-4">不打卡不用担心迟到，还有灵活的remote工作制</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article margin-no">
+                            <figure>
+                                <img src="images/welfare_basis4_illus@3x.png" alt="">
+                                <h3 class="gray-7">免费早餐和午餐</h3>
+                                <p class="gray-4">菜品丰富，每天不重样，还有各种饮料零食</p>
+                            </figure>
+                        </div>
+                        <!-- bottom -->
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis5_illus@3x.png" alt="">
+                                <h3 class="gray-7">免费图书借阅</h3>
+                                <p class="gray-4">上百本图书任你读，内容涵盖教学、经管、社科等</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis6_illus@3x.png" alt="">
+                                <h3 class="gray-7">年度体检</h3>
+                                <p class="gray-4">关心你的健康，还有不定期中医问诊、大保健等</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article">
+                            <figure>
+                                <img src="images/welfare_basis7_illus@3x.png" alt="">
+                                <h3 class="gray-7">节日和生日礼品</h3>
+                                <p class="gray-4">特别的日子送你 最暖心的祝福</p>
+                            </figure>
+                        </div>
+                        <div class="comment-article margin-no">
+                            <figure>
+                                <img src="images/welfare_basis8_illus@3x.png" alt="">
+                                <h3 class="gray-7">免费班车</h3>
+                                <p class="gray-4">多条班车线路由 地铁口直达公司</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welfare-environment">
+                <div class="welfare-env-desc">
+                    <h3>办公环境</h3>
+                    <p class="blue-2">三层独立厂房，超大休闲区，台球/Xbox/PSP/各式桌游、easy piano/古筝/架子鼓/吉他等各式吹拉弹唱设备、全自动现磨咖啡机、睡眠舱休息室、淋浴间、母婴室、静默办公间等，以及最重要的能过滤PM2.5的新风系统，再也不用担心雾霾天啦。</p>
+                </div>
+                <div class="welfare-env-shuffling">
+                    <ul class="list">
+                        <li style="width: 104em;height:56em;padding: 0 2.5em;background: red;"></li>
+                        <li style="width: 104em;height:56em;padding: 0 2.5em;background: green;"></li>
+                        <li style="width: 104em;height:56em;padding: 0 2.5em;background: yellow;"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="welfare-building">
+
+            </div>
+       </div>
     </main>
-    <h2>我是洋葱福利</h2>
+    <div class="footer">
+        <p>© 2015-现在 yangcong345.com版权所有 | 京ICP备14014122号-3</p>
+    </div>
 </body>
 </html>

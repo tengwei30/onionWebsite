@@ -5,34 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>洋葱数学</title>
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" media="screen and (min-device-width:768px)"  href="css/base.css">
+    <link rel="stylesheet" media="screen and (max-device-width:768px)"  href="css/base-mobile.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h4><span class="blue-5">洋葱</span>数学</h4>
+    <header class="header" style="box-shadow: 0 4px 6px 0 rgba(0,0,0,0.04)">
+        <div class="header-title">
+            <div class="logo">
+                <h2><span class="blue-5">洋葱</span>数学</h2>
+            </div>
+            <nav class="nav">
+                <p class="btn-mobile">图片</p>
+                <ul class="navLists">
+                    <li><a class="tab" href="index.html">首页</a></li>
+                    <li><a class="tab" href="onion-values.html">洋葱价值观</a></li>
+                    <li><a class="tab" href="onion-welfare.html">洋葱福利</a></li>
+                    <li><a class="tab active" href="onion-dev.html">发展历程</a></li>
+                    <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
+                    <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul class="navLists">
-                <li><a class="tab" href="index.html">首页</a></li>
-                <li><a class="tab" href="onion-values.html">洋葱价值观</a></li>
-                <li><a class="tab" href="onion-welfare.html">洋葱福利</a></li>
-                <li><a class="tab active" href="onion-dev.html">发展历程</a></li>
-                <li><a class="tab" href="onion-jobs.html">岗位招聘</a></li>
-                <li><a class="tab" href="onion-evaluation.html">社会评价</a></li>
-            </ul>
-        </nav>
     </header>
     <main class="main">
-        <!-- banner -->
-        <div style="width:100%;height:800px;background: blue;">
-            我是banner图
+        <div class="dev-page">
+            <div class="d-p-top">
+                <h2><span class="blue-5">团队</span>介绍</h2>
+                <p class="tip">目前洋葱数学团队超过200人，课程团队来自哈佛、杜克、清华、北大、港大等世界名校以及人大附中、好未来、新东方、高思等教育机构；技术产品团队来自百度、阿里、联想、创新工场等一线科技公司。</p>
+                <div class="dev-boss-desc">
+                    <aside class="aside-img">
+                        <img src="images/development_course_team_ylf@3x.png" alt="">
+                    </aside>
+                    <aside class="aside-txt">
+                        <h3 class="boss-title">杨临风</h3>
+                        <p class="boss-info">联合创始人 / CEO </p>
+                        <p class="boss-desc">哈佛大学计算机专业，曾就职于全球顶级的战略管理咨询公司-波士顿咨询（BCG）、微软总部及微软亚洲研究院。</p><br />
+                        <p class="boss-desc">我们的boss 君人如其名，玉树临风，温柔亲和。有什么新想法去跟boss君交流，他会和你一同超速脑暴，付诸实施时总能给予最大的支持。</p>
+                    </aside>
+                </div>
+                <div class="dev-boss-desc">
+                    <aside class="aside-txt">
+                        <h3 class="boss-title">朱若辰</h3>
+                        <p class="boss-info">联合创始人 / 课程总监 </p>
+                        <p class="boss-desc">-美国杜克大学生物、教育学、心理学专业；多年专攻认知科学及e-learning。人称猪肉脯老师，在学生中人气爆棚。</p><br />
+                        <p class="boss-desc">我们的boss 猪肉脯老师是风趣幽默、脑洞堪比黑洞的学术宅，平时喜欢跟大家交流分享并不断碰撞出火花。</p>
+                    </aside>
+                    <aside class="aside-img">
+                        <img src="images/development_course_team_zrc@3x.png" alt="">
+                    </aside>
+                </div>
+                <div class="dev-boss-desc">
+                    <aside class="aside-img">
+                        <img src="images/development_course_team_ln@3x.png" alt="">
+                    </aside>
+                    <aside class="aside-txt">
+                        <h3 class="boss-title">李诺</h3>
+                        <p class="boss-info">联合创始人 / CTO </p>
+                        <p class="boss-desc">索尼爱立信/创新工场背景，早期的创业项目“点心”已被百度收购。</p><br />
+                        <p class="boss-desc">人称诺哥，颇有魅力又平易近人的老大哥，人萌话不多。极客范儿，重视方法论，带团队66的，特殊技能是可以自由控制体重。</p>
+                    </aside>
+                </div>
+            </div>
+            <div class="d-p-bottom">
+                <h1 class="h1">公司发展史</h1>
+                <div class="d-p-b-miles">
+                    <h2>我们的里程碑</h2>
+                    <div class="d-miles-comment">
+                        <h3>2017年</h3>
+                        <p class="blue-2">用户总量突破 1000 万，B轮融资 9700 万人民币，华为应用商店2017年度最佳教育应用，中国教育科学研究院：2017年度最佳教育工具创新奖，新浪教育盛典：2017年度家长信赖在线教育APP。</p>
+                    </div>
+                    <div class="d-miles-comment">
+                        <h3>2016年</h3>
+                        <p class="blue-2">用户总量突破 500 万，第二届中国教育创新成果公益博览会最高奖“SERVE”奖，Apple App Store 中国区教育精选 App，小米应用商店“金米奖”。用户总量</p>
+                    </div>
+                    <div class="d-miles-comment">
+                        <h3>2015年</h3>
+                        <p class="blue-2">用户总量突破 100 万，A+ 轮融资 3000 万人民币</p>
+                    </div>
+                    <div class="d-miles-comment">
+                        <h3>2014年</h3>
+                        <p class="blue-2">全国各地名校开始使用洋葱数学融入日常教学，A 轮融资 200 万美金。</p>
+                    </div>
+                    <div class="d-miles-comment">
+                        <h3>2013年</h3>
+                        <p class="blue-2">洋葱数学诞生。</p>
+                    </div>
+                    <ul class="d-miles-radius-icon">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="d-p-b-story">
+                    <h2>我们的故事</h2>
+                    <p>2010年开始，在教育领域志趣相投的杨临风和朱若辰一起发起了公益项目“阳光书屋”，从甘肃的农村学校出发，利用信息技术，策划全新课程，致力于打破教育资源不平等的现状。</p><br />
+                    <p>在扎根乡村的三年里，他们发现改变教育最困难的部分既非利用好信息化硬件，亦非教学生使用学习软件，而是一个长久的痛点——教而未懂。一方面因为大部分教师缺乏换位思考的教学理念和方法不符合学生的认知逻辑，学生没有循循善诱的指点常常学不懂；另一方面则是很多人认为学生没有自主学习的动力，所以当时国内没有一款产品能够让学生自主学习、且能学懂知识，学生听不懂也无法自己搞定。</p><br />
+                    <p>为了解决这个深入骨髓的痛点，2013年底，杨临风、朱若辰聚集了来自哈佛、杜克、清华、北大的各路学霸，百度、创新工场等的职业经理人，各大教育机构的名师，组成了一支背景涵盖教育心理学、认知科学、互联网产品、动画设计等的跨界团队，成立了公司光合新知，开始研发一款通过人机交互，让中小学生自主学习的智能教育产品——洋葱数学”。</p><br />
+                    <p>经过四年对课程、产品的深度打磨，洋葱数学为全国1400多万学生带去了海量的优质动画课程与快乐的自主学习体验，帮助全国逾36万教师在专业领域拓展翻转课堂、混合式教学等创新教学模式。与此同时，洋葱也未忘初心，从未停止支持乡村教育。出色的教育产品与社会价值获得了市场与教育界权威的高度认可。</p>
+                </div>
+            </div>
         </div>
-        <!-- comment -->
     </main>
-    <h2>我是岗位招聘</h2>
-    <h2>我是发展历程</h2>
+    <div class="footer">
+            <p>© 2015-现在 yangcong345.com版权所有 | 京ICP备14014122号-3</p>
+    </div>
 </body>
 </html>
