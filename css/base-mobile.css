@@ -1,9 +1,21 @@
-body { /* 10px */
-    font-size: 62.5%;
+
+@media (min-width: 375px) {
+    body { /* 10px */
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 374px) {
+    body { /* 8px */
+        font-size: 47.5%;
+    }
 }
 body,html{
-    width: 100%;height: 100%;overflow-x: hidden;
+    width: 100%;height: 100%;overflow-x: hidden;max-width: 750px;margin: 0 auto;
 }
+
+/* footer */
+footer p {width: 100%;font-size: 1em;line-height: 5em;color: #dadada;font-family: OnionMath_Regular-regular;height: 5em;text-align: center}
+
 
 /* header */
 .header {padding: 1.6em;position: relative;}
@@ -13,17 +25,23 @@ body,html{
 .header .nav .btn-mobile {color: #fff;}
 
 /* main banner */
-
-
-.comment {padding: 0 1.6em;}
+.home-banner {width: 100%;height: 45.6em;background: #1696ea url(../images/wap_home_banner@3x.png) no-repeat center bottom;background-size: 100%;}
+.home-banner .comment {padding: 0 3.2em;display: flex;justify-content: center;align-items: center;flex-direction: column}
+.home-banner .comment h2 {font-size: 2.2em;color: #fff;line-height:1em;text-align: center;padding: 2.3em 0 .454em 0;}
+.home-banner .comment p {font-size: 1.3em;color: #BBE7F6;line-height: 1.31em;text-align: center;}
+.home-banner .comment .download {display: none;}
+.home-banner .comment .download-txt {font-size:1.1em;padding: .91em 0 2.73em 0;text-align: center}
+.home-banner .comment button {font-size: 1.5em;padding: .833em 1.667em;background: #fff;border: 1px solid #F8F8F8;box-shadow: 0 20px 50px 0 rgba(17,126,209,0.40);border-radius: 4px;}
+.comment {padding: 0 3.2em;}
 .comment .onion-value .h1 {font-size:2.4em;text-align: center;padding: 1.66em 0 1.25em 0;}
 .comment .comment-article h2{font-size:font-family: OnionMath_Bold-Bold;font-size: 1.8em;line-height: 1.8em; text-align:center; margin-bottom: 1.11em;}
 .comment .comment-article p {font-family: OnionMath_Regular-regular;
     font-size: 1.2em;letter-spacing: 0;line-height: 1.66em;}
 .comment .comment-article .img {width: 24em;height: 20em;padding: 2em 4.8em 3em}
 .comment .comment-article .img img {width: 100%;height: 100%;}
-.comment-PC {display: none}
-.comment-mobile {display: block;}
+/* .comment-PC {display: none}
+.comment-mobile {display: block;} */
+
 
 /* button more */
 .btn-more {width: 100%;font-size: 1.5em;height: 2.66em;line-height: 2.66em;background: #FFFFFF;
@@ -33,21 +51,29 @@ border-radius: 4px;margin-bottom: 1.66em;}
 
 /* welfare */
 .welfare {width: 100%;background: #F9F9F9;padding: 1.5em;}
-.welfare .comment-article{margin-right: 2em; margin-bottom: 2.1em; display: inline-block;}
+.welfare .comment-article{margin-right: 1em; margin-bottom: 2.1em; display: inline-block;}
 .welfare .comment-article figure{width: 14em;margin: 0;}
 .welfare .comment-article figure h3{font-size: 1.4em;height: 1em;line-height: 1em;text-align: center;margin:1.07em 0 .5em 0;}
 .welfare .comment-article figure img{width: 8em;height: 8em;margin: 0 3em;}
-.welfare .comment-article figure p {font-family: OnionMath_Regular-regular;font-size: 1.2em;line-height: 1em;text-align: center;}
+.welfare .comment-article figure p {font-family: OnionMath_Regular-regular;font-size: 1.2em;line-height: 1.667em;text-align: center;}
 .welfare .btn-welfare{width: 89%;}
 
 /* develop */
 .develop{width: 100%;background: #1696ea;}
-.develop .comment-article {display: block}
+.develop .comment .onion-value {position: relative}
+.develop .comment-article {display: block;padding-left: 1.9em;}
 .develop .comment .h1 {color: #fff;font-family: OnionMath_Bold-Bold;}
-.develop .comment h3 {font-size: 1.4em;color: #fff;line-height: 1.4em;margin-top:1em;font-family: OnionMath_Bold-Bold;}
-.develop .comment p {font-family: OnionMath_Regular-regular;font-size: 1.2em;letter-spacing: 0;line-height: 1.67em;}
-
+.develop .comment h3 {font-size: 1.4em;color: #fff;line-height: 1.4em;font-family: OnionMath_Bold-Bold;}
+.develop .comment p {font-family: OnionMath_Regular-regular;font-size: 1.2em;letter-spacing: 0;line-height: 1.67em;padding-bottom: 1.25em;}
 .develop .btn-develop{margin-top: 3em}
+
+.develop .comment .radius-icon {width: .2em;height: 33.8em;background: #2DA9EE;position: absolute;top: 11.2em;left: 0;}
+.develop .comment .radius-icon li {width: 1em;height: 1em;border-radius: 1em;background: #2DA9EE;list-style: none;position: absolute;top:-.5em;left: -.4em;}
+.develop .comment .radius-icon li:nth-of-type(2) {top: 10.9em;}
+.develop .comment .radius-icon li:nth-of-type(3) {top: 20.2em;}
+.develop .comment .radius-icon li:nth-of-type(4) {top: 25.7em;}
+.develop .comment .radius-icon li:nth-of-type(5) {top: 33em;}
+
 
 /* evaluation */
 .evaluation {width: 100%; background: #f9f9f9;}
@@ -55,11 +81,107 @@ border-radius: 4px;margin-bottom: 1.66em;}
 .evaluation .comment-article .info{font-family: OnionMath_Bold-Bold;font-size: 1.2em;color: #6A6A6A;line-height: 1.33em;margin: .42em 0 .83em 0}
 .evaluation .comment-article .desc{font-family: OnionMath_Regular-regular;
     font-size: 1.2em;color: #888888;letter-spacing: 0;line-height: 1.67em;margin-bottom: 1.67em;}
-
+.evaluation .comment-article .info .read-more {float: right;}
 /* jobs */
 .jobs {width: 100%;background: #fff;}
-.jobs .comment figure {margin:0;width: 11em;display: inline-block;margin-left: 4.5em;margin-bottom: 1.5em;}
+.jobs .comment figure {margin:0;width: 11em;display: inline-block;margin-left: 3.2em;margin-bottom: 1.5em;}
 .jobs .comment figure img {width: 10em;height: 8em}
 .jobs .comment figure h3 {font-size: 1.4em; margin: 1.07em auto .5em;text-align: center;color: #3B3B3B;font-family: OnionMath_Bold-Bold;line-height: 1em;}
 .jobs .comment figure p {font-size: 1.2em;font-family: OnionMath_Regular-regular;color: #A2A2A2;line-height: 1.67em;text-align: center;padding: 0 .25em;}
 
+
+
+/* value page */
+.value-page {padding-top: 5em;}
+.value-page  .value-comment .value-title{padding: 0 3.2em;}
+.value-page  .value-comment .value-title h3 {font-size: 2.8em;line-height: 1em;color: color: #3B3B3B;font-family: OnionMath_Bold-Bold;text-align:center;}
+.value-page  .value-comment .value-title .txt-PC {display: none}
+.value-page  .value-comment .value-title p {font-family: OnionMath_Regular-regular;
+font-size: 1.2em;color: #888888;letter-spacing: 0;line-height: 1.667em;}
+.value-page  .value-comment .value-bg {width: 100%;height: 21em;background: url('../images/wap_home_banner@3x.png') no-repeat center bottom;background-size: 100%;margin-top: 2em;}
+
+.value-details {width: 100%;background: #f9f9f9;padding-bottom: 4em;}
+.value-details .value-comment {padding: 0 3.2em;}
+.value-details .value-comment .v-d-title h2 {font-size: 2.4em;font-family: OnionMath_Bold-Bold;line-height: 1em;color: #3b3b3b;text-align: center;padding: 1.667em 0 1.25em 0;}
+.value-details .value-comment .v-d-title .v-d-t-flex aside p {font-size: 1.2em;line-height: 1.667em;color: color: #888888;letter-spacing: 0;font-family: OnionMath_Regular-regular;}
+
+.value-details .value-comment .v-d-title .v-d-t-flex .v-d-t-img {width: 24em;height: 20em;margin: 0 auto;margin-top: 3em;}
+.value-details .value-comment .v-d-title .v-d-t-flex .v-d-t-img img{width: 100%;}
+
+
+/* develop */
+.dev-page .d-p-top {padding: 0 3.2em}
+.dev-page .d-p-top h2 {font-size: 2.4em;font-family: OnionMath_Bold-Bold;line-height: 1em;text-align: center;padding: 1.667em 0 1.25em 0;}
+.dev-page .d-p-top .tip {font-size: 1.2em;line-height: 1.667em;font-family: OnionMath_Regular-regular;color: #888;}
+.dev-page .d-p-top .dev-boss-desc {width: 100%;overflow:hidden;padding-bottom: 4em;border-bottom: 1px solid #e8e8e8;position: relative;padding-top: 2em;}
+.dev-page .d-p-top .dev-boss-desc .aside-img {width: 8em;margin-right: 2em;margin-bottom: 1.5em;}
+.dev-page .d-p-top .dev-boss-desc .aside-img img{width: 100%;}
+.dev-page .d-p-top .dev-boss-desc .aside-txt {width: 32em;margin-right: 4em;}
+.dev-page .d-p-top .dev-boss-desc .aside-txt .aside-txt-boss{position: absolute;top: 3.95em;left: 9.5em}
+.dev-page .d-p-top .dev-boss-desc .aside-txt .aside-txt-boss .boss-title {font-size: 1.4em;line-height: 1.667em;color: #3b3b3b;font-family: OnionMath_Bold-Bold; }
+.dev-page .d-p-top .dev-boss-desc .aside-txt .aside-txt-boss .boss-info {font-family: OnionMath_Bold-Bold;font-size: 1.2em;color: #6A6A6A;line-height: 1.333em;}
+.dev-page .d-p-top .dev-boss-desc .aside-txt .boss-desc {font-family: OnionMath_Regular-regular;font-size: 1.2em;color: #888888;letter-spacing: 0;line-height: 1.667em;}
+
+.dev-page .d-p-bottom {width: 100%;background:#1696ea url(../images/wap_development_course_history_illus@3x.png) no-repeat center bottom; background-size: 100%;position: relative}
+.dev-page .d-p-bottom .h1 {font-size: 2.4em;color: #fff;text-align: center;padding: 1.667em 0 1.25em 0;}
+.dev-page .d-p-bottom .d-p-b-miles {padding: 0 3.2em;}
+.dev-page .d-p-bottom .d-p-b-miles h2 {font-size: 1.8em;line-height: 1em;color: #fff;text-align: center;padding-bottom: .5em;}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment{padding: 1.5em 0 .5em 2.6em;}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment h3 {font-family: OnionMath_Bold-Bold;font-size: 1.4em;color: #FFFFFF;line-height: 1em}
+.dev-page .d-p-bottom .d-p-b-miles .d-miles-comment p {font-family: OnionMath_Regular-regular;font-size: 1.2em;color: #BBE7F6;letter-spacing: 0;line-height: 1.667em;}
+
+.dev-page .d-p-bottom .d-miles-radius-icon {width: .2em;height: 33.8em;background: #2DA9EE;position: absolute;top: 15.2em;left: 3.9em;}
+.dev-page .d-p-bottom .d-miles-radius-icon li {width: 1em;height: 1em;border-radius: 1em;background: #2DA9EE;list-style: none;position: absolute;top:-.5em;left: -.4em;}
+.dev-page .d-p-bottom .d-miles-radius-icon li:nth-of-type(2) {top: 10.9em;}
+.dev-page .d-p-bottom .d-miles-radius-icon li:nth-of-type(3) {top: 20.2em;}
+.dev-page .d-p-bottom .d-miles-radius-icon li:nth-of-type(4) {top: 25.7em;}
+.dev-page .d-p-bottom .d-miles-radius-icon li:nth-of-type(5) {top: 33em;}
+.dev-page .d-p-bottom .d-p-b-story {padding: 0 3.2em 18em;;}
+.dev-page .d-p-bottom .d-p-b-story h2 {font-family: OnionMath_Bold-Bold;font-size: 1.8em;color: #FFFFFF;line-height: 1em;text-align: center; padding: 1.667em 0 1.111em 0;}
+.dev-page .d-p-bottom .d-p-b-story p {font-family: OnionMath_Regular-regular;font-size: 1.2em;color: #BBE7F6;letter-spacing: 0;line-height: 1.667em;}
+
+
+/* evaluation */
+.eval-page .eval-ins {padding: 0 3.2em 4em;}
+.eval-page .eval-ins .h1 {text-align: center;font-family: OnionMath_Bold-Bold;
+font-size: 2.4em;color: #3B3B3B;padding: 1.667em 0 .625em 0;}
+.eval-page .eval-ins figure {width: 11em;height: 11em;margin: 0;display: inline-block;padding: 0 3.7em 2em 1.8em;}
+.eval-page .eval-ins figure img{width: 100%;height: 8em;border-bottom: 1px solid #e8e8e8;}
+.eval-page .eval-ins figure p{font-size: 1em;text-align: center;}
+.eval-page .eval-ins figure.eval-padding-no{padding-right: 0;}
+.eval-page .eval-ins .eval-start-say {padding-top: 1em}
+.eval-page .eval-ins .eval-start-say .eval-start-txt h3 {font-family: OnionMath_Bold-Bold;
+font-size: 1.6em;color: #3B3B3B;line-height: 1em;text-align: center;}
+.eval-page .eval-ins .eval-start-say .eval-start-txt p {font-family: OnionMath_Regular-regular;
+font-size: 1em;color: #A2A2A2;line-height: 1.6em;text-align: center;padding: 1em 0;}
+.eval-page .eval-ins .eval-start-say .eval-start-img {width: 28em;height: 13em;margin: 0 auto;}
+.eval-page .eval-ins .eval-start-say .eval-start-img img{width: 100%;}
+.eval-page .eval-ins .eval-star-video {width: 28.1em;background: #FFFFFF;
+border: 0 solid #F8F8F8;box-shadow: 0 12px 36px 0 rgba(0,0,0,0.08);border-radius: 16px;padding: 1.5em;}
+.eval-page .eval-ins .eval-star-video .eval-video-control {width: 28.1em;margin: 0 auto;}
+.eval-page .eval-professor {width: 100%;background: #f9f9f9}
+.eval-page .eval-professor .eval-professor-comment{padding: 0 3.2em}
+.eval-page .eval-professor .eval-professor-comment .h1 {font-family: OnionMath_Bold-Bold;
+font-size: 2.4em;color: #3B3B3B;line-height: 1em;text-align: center;padding-top: 1.667em}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info {padding: 3em 0 1em;}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside{clear: both}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside img{width: 6em;height: 6em;float: left;margin-right: 1.1em}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside .eval-professor-intro{float: left;}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside .eval-professor-intro .eval-professor-name{font-family: OnionMath_Bold-Bold;
+font-size: 1.4em;color: #3B3B3B;line-height: 1em;padding: .25em 0 .714em 0}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside .eval-professor-intro .eval-professor-position{font-family: OnionMath_Bold-Bold;
+font-size: 1.2em;color: #6A6A6A;line-height: 1em;padding-bottom: .416em;}
+.eval-page .eval-professor .eval-professor-comment .eval-professor-info aside .eval-professor-eval {font-family: OnionMath_Regular-regular;
+font-size: 1.2em;color: #888888;line-height: 1.667em;padding-top: 1.25em}
+.eval-page .eval-media .evaluation{width: 100%;background: #fff;}
+.eval-page .eval-media .eval-media-logo {padding: 1.5em 5em 4em;}
+.eval-page .eval-media .eval-media-logo img {width: 10em;height: 5em;padding-right: 6em;}
+.eval-page .eval-media .eval-media-logo .eval-media-logo-padding-no {padding-right: 0;}
+
+/* PC or mobile */
+.comment-PC {display: none}
+.comment-mobile {display: inline-block}
+
+/* footer */
+
+.footer p {width: 100%;font-size: 1em;height: 5em;line-height: 5em;background: #1696ea;text-align: center;color: #117ED1;}

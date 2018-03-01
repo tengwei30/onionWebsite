@@ -4,7 +4,7 @@
         font-size: 62.5%;
     }
 }
-@media (max-width: 1366px) and (min-width: 768px) {
+@media (max-width: 1366px) {
     body { /* 8px */
         font-size: 47.5%;
     }
@@ -44,8 +44,8 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 /*------------------------- index main --------------------**/
 .comment{width:104em;margin: 0 auto;}
 .comment .h1{font-size: 4.8em;text-align: center;padding: 1.6em 0 1.25em 0;}
-.comment-PC {display: block}
-.comment .comment-mobile {display: none;}
+/* .comment-PC {display: block}
+.comment .comment-mobile {display: none;} */
 .comment-article {display: flex;}
 .comment-article aside {flex: 1;}
 .comment-article aside h2 {font-size: 3.6em;padding: 1.8em 0 0.83em 0;}
@@ -110,10 +110,12 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .jobs .comment figure h3 {font-size: 2.8em; margin: 1.07em auto .5em;text-align: center;color: #3B3B3B;font-family: OnionMath_Bold-Bold;line-height: 1em;}
 .jobs .comment figure p {font-size: 2em;font-family: OnionMath_Regular-regular;color: #A2A2A2;line-height: 1.6em;text-align: center;padding: 0 .25em;}
 .jobs .comment figure p .invisible{visibility: hidden}
-
+.value-page  .value-comment .value-title .txt-mobile {display: none}
 
 /* values page */
 .value-page {margin-top: 6.4em;}
+/* .value-page .comment-PC {display: none}
+.value-page .comment-mobile {display: block} */
 .value-page .value-bg {width: 100%;height: 42em;background: url('../images/values_illus_head@3x.png') no-repeat center bottom;background-size: 100%;}
 .value-page .value-comment{width: 118em;margin: 0 auto;}
 .value-page .value-comment .value-title {padding: 0 7em;}
@@ -138,9 +140,9 @@ footer p{margin: 0;padding:0;width: 100%;background:#f9f9f9;margin: 0 auto;font-
 .welfare-page .welfare-environment .welfare-env-desc p {font-family: OnionMath_Regular-regular;font-size: 2em;line-height: 1.6em;letter-spacing: 0;padding: 2em 0;}
 
 /* shuffling */
-.welfare-page .welfare-environment .welfare-env-shuffling {width: 104em;margin: 0 auto;position: relative;clear: both;overflow: scroll;height: 56em;}
-.welfare-page .welfare-environment .welfare-env-shuffling .list {list-style: none;position: absolute;top: 0;left: 0;width:99999px;height: 56em;background: red;z-index: 22;}
-.welfare-page .welfare-environment .welfare-env-shuffling .list li {float: left;width: 104em;}
+.welfare-page .welfare-environment .welfare-env-shuffling {width: 620px;height: 200px;position: relative;margin: 0 auto;overflow: scroll;border: none}
+.welfare-page .welfare-environment .welfare-env-shuffling .list {list-style: none;border: none;}
+.welfare-page .welfare-environment .welfare-env-shuffling .list li {float: left}
 
 /* develop page */
 .dev-page .d-p-top {width: 104em;margin: 0 auto;}
@@ -232,4 +234,6 @@ font-size: 2em;color: #888888;ine-height: 1.6em; padding-bottom:2em; border-bott
 
 
 
-
+/* PC or mobile */
+/* .comment-PC {display: inline} */
+.comment-mobile {display: none}

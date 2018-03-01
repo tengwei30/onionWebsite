@@ -30,4 +30,6 @@ $(function() {
 
     // shuffling
     
+    var w = 20 + 'em';
+    console.log(w)
 })
