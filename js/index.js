@@ -30,6 +30,41 @@ $(function() {
 
     // shuffling
     
-    var w = 20 + 'em';
-    console.log(w)
+
+    // get jobs
+    getJobs();
+    function getJobs() {
+        $.ajax({
+            // url: 'http://10.8.200.56:3000/jobs',
+            url: 'http://localhost:3001/jobs.json',
+            dataType: "jsonp",
+            contentType: 'application/json',
+            success: function(data) {
+                console.log(data)
+            },
+            fail: function(err) {
+                console.log('error ---> ', err)
+            }
+        })
+    }
+
+    // jobs switch
+    $('.jobs-position-name-list li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    // read details
+    $('.jobs-position-read-more').on('click',function() {
+        $(this).parent().parent().siblings().slideToggle(300)
+        if ($(this).find('i').hasClass('rotate')) {
+            $(this).find('i').removeClass('rotate')
+            $(this).find('i').addClass('init-rotate')
+        } else {
+            $(this).parent().parent().parent().siblings().find('i').removeClass('rotate')
+            $(this).find('i').removeClass('init-rotate')
+            $(this).find('i').addClass('rotate')
+        }
+        $(this).parent().parent().parent().siblings().find('.jobs-postion-desc-bottom').slideUp(300)
+    })
+
 })
