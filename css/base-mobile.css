@@ -1,14 +1,15 @@
 
-@media (min-width: 375px) {
+@media (min-width:320px) and (max-width:414px) {
     body { /* 10px */
         font-size: 62.5%;
     }
 }
-@media (max-width: 374px) {
-    body { /* 8px */
-        font-size: 47.5%;
+@media (max-width:320px) {
+    body {
+        font-size: 50%;
     }
 }
+
 body,html{
     width: 100%;height: 100%;overflow-x: hidden;max-width: 750px;margin: 0 auto;
 }
@@ -18,12 +19,20 @@ footer p {width: 100%;font-size: 1em;line-height: 5em;color: #dadada;font-family
 
 
 /* header */
-.header {padding: 1.6em;position: relative;}
+.header {padding: 1.6em;position: fixed;top: 0;left: 0;right:0;z-index: 9999;background: #fff;}
+.header .header-title {position: relative}
 .header .logo h2 {font-size: 2.4em;}
-.header .nav .navLists{display: none}
-.header .nav {float: right;width: 2.4em;height: 2.4em;background: #000;position: absolute;right: 1.6em;top:2em;}
+.header .nav .navLists{display: none;width: 12em;list-style: none;position: absolute;top:3.4em;right: 0;background: #fff;z-index: 9998;padding:1em 0;border-radius: 1em;}
+.header .nav .navLists li{text-align: center;height: 4em;line-height: 4em;}
+.header .nav .navLists li a{font-size: 1.6em;color: #888;line-height: 1em;letter-spacing: 0;width: 100%;}
+.header .nav .navLists li a.active {color: #1696ea}
+
+.header .nav {float: right;width: 2.4em;height: 2.4em;background: #000;position: absolute;right: 1.5em;top:.5em;}
 .header .nav .btn-mobile {color: #fff;}
 
+
+
+.main {margin-top: 5.6em;}
 /* main banner */
 .home-banner {width: 100%;height: 45.6em;background: #1696ea url(../images/wap_home_banner@3x.png) no-repeat center bottom;background-size: 100%;}
 .home-banner .comment {padding: 0 3.2em;display: flex;justify-content: center;align-items: center;flex-direction: column}
@@ -39,8 +48,6 @@ footer p {width: 100%;font-size: 1em;line-height: 5em;color: #dadada;font-family
     font-size: 1.2em;letter-spacing: 0;line-height: 1.66em;}
 .comment .comment-article .img {width: 24em;height: 20em;padding: 2em 4.8em 3em}
 .comment .comment-article .img img {width: 100%;height: 100%;}
-/* .comment-PC {display: none}
-.comment-mobile {display: block;} */
 
 
 /* button more */
@@ -50,8 +57,16 @@ border-radius: 4px;margin-bottom: 1.66em;}
 
 
 /* welfare */
-.welfare {width: 100%;background: #F9F9F9;padding: 1.5em;}
-.welfare .comment-article{margin-right: 1em; margin-bottom: 2.1em; display: inline-block;}
+
+@media (min-width:320px) and (max-width:375px) {
+    .welfare {width: 100%;background: #F9F9F9;padding: 1.5em;}
+    .welfare .comment-article{margin-right: 1em; margin-bottom: 2.1em; display: inline-block;}
+}
+@media (max-width:320px) {
+    .welfare {width: 100%;background: #F9F9F9;padding: 1.5em 0;}
+    .welfare .comment-article{margin-right: .2em; margin-bottom: 2.1em; display: inline-block;}
+}
+
 .welfare .comment-article figure{width: 14em;margin: 0;}
 .welfare .comment-article figure h3{font-size: 1.4em;height: 1em;line-height: 1em;text-align: center;margin:1.07em 0 .5em 0;}
 .welfare .comment-article figure img{width: 8em;height: 8em;margin: 0 3em;}
@@ -141,7 +156,33 @@ font-size: 1.2em;color: #888888;letter-spacing: 0;line-height: 1.667em;}
 .dev-page .d-p-bottom .d-p-b-story p {font-family: OnionMath_Regular-regular;font-size: 1.2em;color: #BBE7F6;letter-spacing: 0;line-height: 1.667em;}
 
 
-/* evaluation */
+/* jobs page */
+.jobs-page .jobs-banner {width: 100%;height: 14em;background: url('../images/home_banner@3x.png') no-repeat center center;background-size: cover;}
+.jobs-page .jobs-positions .jobs-position-name {width: 100%;overflow-y: hidden;border-bottom: 1px solid #e8e8e8;}
+.jobs-page .jobs-positions .jobs-position-name .jobs-position-name-list li img {display: none;}
+.jobs-page .jobs-positions .jobs-position-name .jobs-position-name-list {list-style: none;width: 9999px;}
+.jobs-page .jobs-positions .jobs-position-name .jobs-position-name-list li {float: left;font-size: 1.2em;line-height: 1em;padding:1.25em 1.083em;letter-spacing: 0;color: #888;}
+.jobs-page .jobs-positions .jobs-position-name .jobs-position-name-list li.active {color: #1696ea;border-bottom: .25em solid #1696ea;}
+
+.jobs-page .jobs-positions .jobs-position-desc .jobs-position-desc-list li .jobs-postion-desc-top {padding: 1.5em 0;border-bottom: 1px solid #e8e8e8;border-top: 1px solid #e8e8e8;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-position-desc-list li:first-child .jobs-postion-desc-top {border-top: none;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-position-desc-list li .jobs-postion-desc-top .jobs-position-title{font-size: 1.4em;line-height: 1em;color: #3b3b3b;font-family: OnionMath_Bold-Bold;padding: 0 1.07em .714em;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-position-desc-list li .jobs-postion-desc-top .jobs-position-title .jobs-position-createtime {float: right;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-position-desc-list li .jobs-postion-desc-top .jobs-position-money {font-size: 1.2em;line-height: 1em;color: #888;font-family: OnionMath_Bold-Bold;padding: 0 1.25em;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-money em {font-style: normal;color: #1696ea;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-money .jobs-position-read-more {float:right;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-money .jobs-position-read-more em{float:left;color: #888;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-read-more i{float:left;width:1.4em;height:1em;margin-left:.1em;display: inline-block;background: url('../images/job_ic_drop_down@3x.png') no-repeat center center;background-size: 85%;}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-read-more .rotate {transform-origin:center center;transform: rotate(180deg);transition: transform 0.3s; }
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-top .jobs-position-read-more .init-rotate {transform-origin:center center;transform: rotate(0deg);transition: transform 0.3s;}
+
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-bottom {padding: 0 1.5em 1.5em;display: none}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-bottom h5 {font-size: 1.2em;color: #3b3b3b;line-height: 1em;padding: 1.25em 0 .667em}
+.jobs-page .jobs-positions .jobs-position-desc .jobs-postion-desc-bottom p {font-size: 1.2em;color: #888;line-height: 1.667em;letter-spacing: 0;}
+.jobs-page .jobs-positions .jobs-position-desc .btn-resume {font-size: 1.2em;line-height: 1em;color: #fff;font-family: OnionMath_Bold-Bold;background:#1696ea;padding:.5em 1em;border: none;border-radius:4px;box-shadow: 0 6px 18px 0 rgba(0,0,0,0.08);margin-top: 1.667em;}
+
+
+/* evaluation page */
 .eval-page .eval-ins {padding: 0 3.2em 4em;}
 .eval-page .eval-ins .h1 {text-align: center;font-family: OnionMath_Bold-Bold;
 font-size: 2.4em;color: #3B3B3B;padding: 1.667em 0 .625em 0;}
@@ -180,7 +221,7 @@ font-size: 1.2em;color: #888888;line-height: 1.667em;padding-top: 1.25em}
 
 /* PC or mobile */
 .comment-PC {display: none}
-.comment-mobile {display: inline-block}
+/* .comment-mobile {display: inline-block} */
 
 /* footer */
 
